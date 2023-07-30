@@ -251,7 +251,7 @@ init_install() {
 # 更新 V2Ray
 update_v2ray() {
   echo -e "${INFO} 正在更新 V2Ray ..."
-  bash <(curl -L -s https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+  bash <(curl -L -s https://raw.githubusercontent.com/ltsyydswow/v2ray/main/vmess.sh)
   echo -e "${SUCCESS} V2Ray 更新成功!"
   systemctl restart v2ray
 }
@@ -272,7 +272,7 @@ menu() {
   echo -e "
  
   V2Ray 安装管理脚本
-  --- 引自 wulabing 的一键安装脚本,进行了重构优化 ---
+  
 
   ${INFO} 1. 安装
   ${INFO} 2. 更新 V2Ray
