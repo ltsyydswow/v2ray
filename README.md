@@ -1,3 +1,3 @@
 请用
-wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/ltsyydswow/v2ray/main/vmess.sh" && chmod +x install.sh && bash install.sh
+wget -N --no-check-certificate -q -O vmess.sh "https://raw.githubusercontent.com/ltsyydswow/v2ray/main/vmess.sh" && chmod +x vmess.sh && bash vmess.sh
 安装
