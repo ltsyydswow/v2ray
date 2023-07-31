@@ -1,4 +1,4 @@
-
+ff
 
 RED="\033[31m"      # Error message
 GREEN="\033[32m"    # Success message
@@ -583,7 +583,7 @@ getCert() {
 		fi		
 		
         [[ -f ~/.acme.sh/${DOMAIN}_ecc/ca.cer ]] || {
-            colorEcho $RED " 获取证书失败，请复制上面的红色文字到 https://www.hicairo.com 反馈"
+            colorEcho $RED " 获取证书失败"
             exit 1
         }
         KEY_FILE="/etc/v2ray/${DOMAIN}.key"
@@ -593,7 +593,7 @@ getCert() {
             --fullchain-file $CERT_FILE \
             --reloadcmd     "service nginx force-reload"
         [[ -f $CERT_FILE && -f $KEY_FILE ]] || {
-            colorEcho $RED " 获取证书失败，请到 https://www.hicairo.com 反馈"
+            colorEcho $RED " 获取证书失败"
             exit 1
         }
     else
